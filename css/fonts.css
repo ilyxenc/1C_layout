@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Avenir_Bold';
+  src: url(./../fonts/AvenirNextCyr-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Avenir_DemiBold';
+  src: url(./../fonts/AvenirNextCyr-Demi.ttf);
+}
+
+@font-face {
+  font-family: 'Avenir_Regular';
+  src: url(./../fonts/AvenirNextCyr-Regular.ttf);
+}

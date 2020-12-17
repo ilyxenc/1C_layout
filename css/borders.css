@@ -1,0 +1,247 @@
+.borders {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.borderLeftTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.borderRightTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.borderLeftBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.borderRightBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.borderLeftTopType1 {
+  width: 8px;
+  height: 106px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+.borderLeftTopType2 {
+  width: 38px;
+  height: 58px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+.borderLeftTop1 {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.borderLeftTop2 {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+}
+
+.borderRightTopType1 {
+  width: 68px;
+  height: 106px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+.borderRightTopType2 {
+  width: 38px;
+  height: 108px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+.borderRightTop1 {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+.borderRightTop2 {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+
+.borderLeftBottomType1 {
+  width: 68px;
+  height: 106px;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.borderLeftBottomType2 {
+  width: 8px;
+  height: 38px;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.borderLeftBottom1 {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+}
+
+.borderLeftBottom2 {
+  position: absolute;
+  left: -12px;
+  bottom: -12px;
+}
+
+.borderRightBottomType1 {
+  width: 8px;
+  height: 106px;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.borderRightBottomType2 {
+  width: 28px;
+  height: 38px;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.borderRightBottom1 {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+}
+
+.borderRightBottom2 {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+}
+
+.borderGradient {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+}
+
+@media only screen and (max-device-width: 668px) {
+  .borderLeftTopType1 {
+    width: 9px;
+    height: 67px;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+
+  .borderLeftTopType2 {
+    width: 39px;
+    height: 59px;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+
+  .borderLeftTop1 {
+    position: absolute;
+    left: -9px;
+    top: -9px;
+  }
+
+  .borderLeftTop2 {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+  }
+
+  .borderRightTopType1 {
+    width: 49px;
+    height: 67px;
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+
+  .borderRightTopType2 {
+    width: 39px;
+    height: 109px;
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+  }
+
+  .borderRightTop1 {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+  }
+
+  .borderRightTop2 {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+  }
+
+  .borderLeftBottomType1 {
+    width: 69px;
+    height: 67px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+
+  .borderLeftBottomType2 {
+    width: 9px;
+    height: 39px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+
+  .borderLeftBottom1 {
+    position: absolute;
+    left: -9px;
+    bottom: -9px;
+  }
+
+  .borderLeftBottom2 {
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+  }
+
+  .borderRightBottomType1 {
+    width: 9px;
+    height: 67px;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+
+  .borderRightBottomType2 {
+    width: 29px;
+    height: 39px;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+
+  .borderRightBottom1 {
+    position: absolute;
+    right: -9px;
+    bottom: -9px;
+  }
+
+  .borderRightBottom2 {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+  }
+}

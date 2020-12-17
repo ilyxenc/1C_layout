@@ -1,0 +1,122 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, small, strike, strong, b, i, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li, form, label, table, tbody, tfoot, thead, tr, th, td, canvas, footer, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #080E24;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+  background: #EDE9E6 url(./../images/background.png) no-repeat center top / cover;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+}
+
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.menu, .data {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  align-items: center;
+}
+
+.button {
+  width: fit-content;
+  font-family: 'Avenir_Bold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-device-width: 1440px) {}
+
+@media only screen and (max-device-width: 1290px) {}
+
+@media only screen and (max-device-width: 1024px) {}
+
+@media only screen and (max-device-width: 868px) {}
+
+@media only screen and (max-device-width: 725px) {}
+
+@media only screen and (max-device-width: 668px) {}
