@@ -1,0 +1,94 @@
+.mafia {
+  width: 434px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 271px;
+  top: 260px;
+  z-index: -1;
+}
+
+.mafiaSchedule {
+  max-width: 464px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textBlock {
+  margin: 30px 0 16px;
+}
+
+.mafiaScheduleCaption {
+  font-family: 'Avenir_Medium';
+  font-size: 12px;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.mafiaScheduleTime {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #BEA08F;
+}
+
+.mafiaHr {
+  width: 1px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.mafiaScheduleItem {
+  margin-bottom: 12px;
+}
+
+.mafiaHrBottom {
+  height: 46px;
+}
+
+.mafiaHrShowMobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .mafia {
+    width: 290px;
+    left: 146px;
+    top: 260px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .mafiaSchedule {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .mafiaHrHideMobile {
+    display: none;
+  }
+
+  .mafia {
+    width: 280px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+  }
+
+  .textBlock {
+    margin: 24px auto 16px;
+  }
+
+  .mafiaHrShowMobile {
+    display: block;
+  }
+}

@@ -26,10 +26,125 @@
       <img src="./../images/burger.png" alt="" />
     </div>
   </div>
+  <div id="menuBlock" class="menuBlock" data-visibility="0">
+    <a class="timetableItem" href="./../congr/congr.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-11.png" alt="" />
+      </div>
+      <p>
+        Новогодние поздравления
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-8.png" alt="" />
+      </div>
+      <p>
+        Quiz
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-5.png" alt="" />
+      </div>
+      <p>
+        Новогодний<br />стол от шефа
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-2.png" alt="" />
+      </div>
+      <p>
+        Скажи чиззз!
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-10.png" alt="" />
+      </div>
+      <p>
+        Новогодние воспоминания
+      </p>
+    </a>
+    <a class="timetableItem" href="./../mafia/mafia.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-7.png" alt="" />
+      </div>
+      <p>
+        Просыпается мафия
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-4.png" alt="" />
+      </div>
+      <p>
+        Своими руками
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-1.png" alt="" />
+      </div>
+      <p>
+        Новогодняя флудилка
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-9.png" alt="" />
+      </div>
+      <p>
+        Новогодний фотоальбом
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-6.png" alt="" />
+      </div>
+      <p>
+        Counter-Strike: Source
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-3.png" alt="" />
+      </div>
+      <p>
+        OPEN MIC
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon.png" alt="" />
+      </div>
+      <p>
+        Сыграем?
+      </p>
+    </a>
+  </div>
+  <script type="text/javascript">
+    let menu = document.querySelector("#menu");
+    let menuBlock = document.querySelector("#menuBlock");
+    let menuTop = document.querySelector(".menu");
+
+    menu.addEventListener('click', () => {
+      if (menuBlock.dataset.visibility == 0) {
+        menuTop.classList = 'menu menuTopActivated';
+        menuBlock.classList = 'menuBlock menuBottomActivated';
+        menuBlock.dataset.visibility = 1;
+      } else {
+        menuTop.classList = 'menu';
+        menuBlock.classList = 'menuBlock';
+        menuBlock.dataset.visibility = 0;
+      }
+    });
+  </script>
   <div class="shadowMobile">
 
   </div>
-  <div class="data">
+  <div class="dataHome">
     <div class="dataLeft">
       <div class="dataVideo">
         <img class="video" src="./../images/video.png" alt="" />
@@ -59,7 +174,7 @@
         </p>
       </div>
       <div class="timetable">
-        <a class="timetableItem" href="#">
+        <a class="timetableItem" href="./../congr/congr.html">
           <div class="icon gradient">
             <img src="./../images/icons/icon-11.png" alt="" />
           </div>
@@ -99,7 +214,7 @@
             Новогодние воспоминания
           </p>
         </a>
-        <a class="timetableItem" href="#">
+        <a class="timetableItem" href="./../mafia/mafia.html">
           <div class="icon gradient">
             <img src="./../images/icons/icon-7.png" alt="" />
           </div>

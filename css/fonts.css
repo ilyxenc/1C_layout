@@ -12,3 +12,8 @@
   font-family: 'Avenir_Regular';
   src: url(./../fonts/AvenirNextCyr-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'Avenir_Medium';
+  src: url(./../fonts/AvenirNextCyr-Medium.ttf);
+}

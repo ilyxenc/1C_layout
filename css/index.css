@@ -82,12 +82,16 @@ body {
   display: block;
 }
 
-.menu, .data {
+.menu, .dataHome, .data {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.data {
+  display: block;
 }
 
 .menu {
@@ -108,6 +112,194 @@ body {
   margin: 0 auto;
 }
 
+.backBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.back {
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 12px;
+}
+
+.back img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.backBlock p {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 12px;
+}
+
+.backBlock::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.backBlock:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+.backBlock:hover .back {
+  background: transparent !important;
+}
+
+.backBlock:hover p {
+  color: #FFFFFF;
+}
+
+.textBlock {
+  margin: 30px 0 30px;
+  max-width: 898px;
+  width: 100%;
+}
+
+.textHr {
+  display: block;
+  height: 8px;
+}
+
+.textCaption {
+  font-family: 'Avenir_DemiBold';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.textBold {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6D4F3E;
+}
+
+.text {
+  font-family: 'Avenir_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.shadowMobile {
+  display: none;
+}
+
+.attention {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  vertical-align: top;
+  max-width: 898px;
+  width: 100%;
+}
+
+.attention img {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  margin-right: 4px;
+  vertical-align: inherit;
+}
+
+.enterButton {
+  font-family: 'Avenir_Bold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  display: block;
+  max-width: 120px;
+  width: fit-content;
+  margin-top: 48px;
+  position: relative;
+  transition: 0.3s;
+  margin-left: 8px;
+}
+
+.enterButton:hover {
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.75);
+}
+
+.enterBorders {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.enterBorderLeftTop {
+  width: 38px;
+  height: 8px;
+  border-left: 4px solid transparent;
+  border-top: 4px solid transparent;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+}
+
+.enterBorderRightBottom {
+  width: 12px;
+  height: 24px;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+}
+
+.rules {
+  font-size: 12px;
+}
 
 @media only screen and (max-device-width: 1440px) {}
 
@@ -115,8 +307,75 @@ body {
 
 @media only screen and (max-device-width: 1024px) {}
 
-@media only screen and (max-device-width: 868px) {}
+@media only screen and (max-device-width: 868px) {
+  .menu, .data {
+    padding: 0 20px;
+  }
+
+  body {
+    background-size: 250%;
+  }
+}
 
 @media only screen and (max-device-width: 725px) {}
 
-@media only screen and (max-device-width: 668px) {}
+@media only screen and (max-device-width: 668px) {
+  .enterBorderLeftTop {
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    left: -6px;
+    top: -6px;
+  }
+
+  .enterBorderRightBottom {
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    right: -6px;
+    bottom: -6px;
+  }
+
+  .enterButton {
+    margin-left: 7px;
+    margin-top: 30px;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .shadowMobile {
+    display: block;
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#EDE9E6, rgba(237, 233, 230, 0));
+    z-index: -1;
+  }
+
+  .menu, .data {
+    padding: 0 10px;
+  }
+
+  .textBlock {
+    margin: 24px auto;
+  }
+
+  .backBlock p {
+    font-size: 14px;
+  }
+
+  .text, .attention, .textBold {
+    font-size: 14px;
+  }
+
+  .textCaption {
+    font-size: 18px;
+  }
+
+  body {
+    background-size: 600%;
+  }
+}

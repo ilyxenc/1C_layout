@@ -39,6 +39,38 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background: linear-gradient(transparent, transparent);
+  transition: background 0.5s ease;
+  position: relative;
+}
+
+.timetableItem::after {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.timetableItem:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+.timetableItem:hover .icon {
+  background: transparent !important;
+}
+
+.timetableItem:hover p {
+  color: #FFFFFF;
 }
 
 .icon {
@@ -61,7 +93,7 @@
 .timetableItem p {
   width: 128px;
   font-family: 'Avenir_DemiBold';
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   line-height: 18px;
   letter-spacing: 0em;
@@ -93,8 +125,38 @@
   margin: 0 auto;
 }
 
-.menuIcon, .shadowMobile {
+.menuIcon, .menuBlock {
   display: none;
+}
+
+.menuBlock .timetableItem {
+  width: 100%;
+}
+
+.menuBlock .timetableItem p {
+  width: auto;
+}
+
+.menuTopActivated {
+  position: fixed;
+  z-index: 100;
+  background: #E7D8CE;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menuBottomActivated {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  background: #E7D8CE;
+  width: 100%;
+  height: calc(100% - 99px);
+  box-sizing: border-box;
+  padding: 20px;
+  top: 99px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 @media only screen and (max-device-width: 1320px) {
@@ -151,7 +213,7 @@
     margin: 32px auto;
   }
 
-  .data {
+  .dataHome {
     flex-direction: column;
   }
 
@@ -176,14 +238,15 @@
 }
 
 @media only screen and (max-device-width: 668px) {
-  .menu {
-    padding: 0 10px;
-    background: #E7D8CE;
+  .menuBottomActivated {
+    height: calc(100% - 63px);
+    top: 63px;
+    padding: 10px;
   }
 
-  .logo {
-    width: 64px;
-    height: 64px;
+  .menu {
+    padding: 0 10px;
+    /* background: #E7D8CE; */
   }
 
   .menuIcon {
@@ -191,19 +254,8 @@
     height: 48px;
   }
 
-  .data {
+  .dataHome {
     padding: 0 20px;
-  }
-
-  .shadowMobile {
-    display: block;
-    width: 100%;
-    height: 320px;
-    position: absolute;
-    left: 0;
-    top: 64px;
-    background: linear-gradient(#EDE9E6, rgba(237, 233, 230, 0));
-    z-index: -1;
   }
 
   .dataVideo {
