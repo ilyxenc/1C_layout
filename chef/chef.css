@@ -6,13 +6,13 @@
   color: #000000 !important;
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .textBlock {
     max-width: 538px;
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .textBlock {
     max-width: 100%;
     margin: 24px auto 16px;

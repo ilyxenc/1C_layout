@@ -12,7 +12,7 @@
   height: 46px;
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .flud {
     width: 290px;
     left: 146px;
@@ -24,7 +24,7 @@
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .flud {
     width: 280px;
     left: 0;

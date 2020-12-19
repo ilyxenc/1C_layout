@@ -177,19 +177,19 @@
   display: flex !important;
 }
 
-@media only screen and (max-device-width: 1180px) {
+@media only screen and (max-width: 1180px) {
   #chat {
     width: 300px;
   }
 }
 
-@media only screen and (max-device-width: 970px) {
+@media only screen and (max-width: 970px) {
   #chat {
     width: 260px;
   }
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   #chat {
     width: 100%;
     margin: 50px auto;
@@ -200,7 +200,7 @@
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   #chat {
     margin: 30px auto 48px;
     /* height: 360px; */

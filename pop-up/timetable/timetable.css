@@ -216,7 +216,7 @@
   text-align: left;
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .timetable {
     padding: 0 20px;
     margin: 40px auto;

@@ -140,7 +140,7 @@
   border-image-source: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .borderLeftTopType1 {
     width: 9px;
     height: 67px;

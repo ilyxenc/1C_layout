@@ -224,7 +224,7 @@
   margin: 0 16px;
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .textBlock {
     max-width: 538px;
   }
@@ -237,7 +237,7 @@
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .playImg {
     margin-top: -20px;
   }
@@ -352,7 +352,7 @@
   }
 }
 
-@media only screen and (max-device-width: 620px) {
+@media only screen and (max-width: 620px) {
   .playImg {
     margin: 0 auto;
   }

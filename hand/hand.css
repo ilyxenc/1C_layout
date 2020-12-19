@@ -65,7 +65,7 @@
   font-family: 'Avenir_DemiBold';
 }
 
-@media only screen and (max-device-width: 1290px) {
+@media only screen and (max-width: 1290px) {
   .handItem {
     width: 25%;
   }
@@ -79,7 +79,7 @@
   }
 }
 
-@media only screen and (max-device-width: 1050px) {
+@media only screen and (max-width: 1050px) {
   .handText {
     min-height: 576px;
   }
@@ -89,7 +89,7 @@
   }
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .textBlock {
     max-width: 538px;
   }
@@ -118,7 +118,7 @@
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .textBlock {
     max-width: 100%;
   }

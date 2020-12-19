@@ -65,7 +65,7 @@
   color: #BEA08F;
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .congrButton {
     padding: 8px 15px;
     font-size: 12px;
@@ -73,13 +73,13 @@
   }
 }
 
-@media only screen and (max-device-width: 868px) {
+@media only screen and (max-width: 868px) {
   .congr {
     max-width: 48.5%;
   }
 }
 
-@media only screen and (max-device-width: 668px) {
+@media only screen and (max-width: 668px) {
   .congr {
     max-width: 100%;
   }
