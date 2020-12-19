@@ -23,7 +23,7 @@
   box-sizing: border-box;
   position: relative;
 }
-
+/*
 .borders {
   position: absolute;
   width: 100%;
@@ -140,7 +140,7 @@
 .borderGradient {
   border-image-slice: 1;
   border-image-source: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
-}
+} */
 
 .gradient {
   background: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
@@ -242,7 +242,7 @@
   .popUp {
     width: 87.5%;
   }
-
+/*
   .borderLeftTop1 {
     width: 39px;
     height: 59px;
@@ -320,7 +320,7 @@
     bottom: -5px;
     border-right: 2px solid transparent;
     border-bottom: 2px solid transparent;
-  }
+  } */
 
   .caption {
     font-size: 18px;
