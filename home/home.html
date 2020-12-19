@@ -353,11 +353,75 @@
           </div>
         </div>
         <form class="inputBlock">
-          <input class="chatInput" type="text" name="chatText" value="" placeholder="">
+          <div id="emojis" data-visibility="0">
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_24.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_21.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_22-01.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_22.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_23.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_24.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_25.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_26-01.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_28-01.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_29-01.svg" alt="" />
+            </div>
+
+            <div class="emojisItem">
+              <img class="emoji" src="./../images/emoji/sticker_30-01.svg" alt="" />
+            </div>
+          </div>
+
+          <div id="emojiBlock">
+            <img class="emoji" src="./../images/emoji/sticker_24.svg" alt="" />
+          </div>
+
+          <textarea class="chatInput" name="name" rows="2" cols="80" value="" placeholder=""></textarea>
           <div id="sendBlock">
             <img class="send" src="./../images/icons/send.png" alt="" />
           </div>
         </form>
+        <script type="text/javascript">
+          let emoji = document.querySelector('#emojiBlock');
+          let emojis = document.querySelector('#emojis');
+
+          emoji.addEventListener('click', () => {
+            if (emojis.dataset.visibility == 0) {
+              emojis.classList = 'showEmojis';
+              emojis.dataset.visibility = 1;
+            } else {
+              emojis.classList = '';
+              emojis.dataset.visibility = 0;
+            }
+          });
+        </script>
         <div class="chatMargin"></div>
         <div class="borders">
           <div class="borderLeftTop">
