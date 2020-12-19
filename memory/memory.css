@@ -1,0 +1,42 @@
+.memories {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.memory {
+  width: 48.5%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.memoryImg {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .textBlock {
+    max-width: 538px;
+  }
+
+  .memory {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .textBlock {
+    max-width: 100%;
+  }
+
+  .memory {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .data {
+    margin-bottom: 30px;
+  }
+}

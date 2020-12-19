@@ -1,0 +1,359 @@
+.textBlock {
+  margin: 30px 0 16px;
+}
+
+.playBlockOuther {
+  max-width: 772px;
+  width: 56.7%;
+  margin: 62px auto 40px;
+}
+
+.playBlock {
+  width: 100%;
+  background: #FFFFFF;
+  height: 480px;
+  position: relative;
+}
+
+.playData {
+  width: 100%;
+  height: 100%;
+}
+
+.playPics {
+  padding: 60px 0 0;
+  margin: 0 auto;
+}
+
+.playStart {
+  max-width: 346px;
+  width: 44.8%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.playButton {
+  position: absolute;
+  bottom: 60px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.playRound {
+  text-align: center;
+  padding: 135px 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.playRoundCount {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+}
+
+.playRoundName {
+  font-family: 'Avenir_Bold';
+  font-size: 32px;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6D4F3E;
+  margin: 16px auto 8px;
+}
+
+.playRoundDescription {
+  font-family: 'Avenir_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #BEA08F;
+}
+
+.playLabelRadio {
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 1px #6D4F3E;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.playLabelRadioAnswered {
+  box-shadow: inset 0 0 0 1px #6D4F3E, inset 0 0 0 5px #FFFFFF, inset 0 0 0 100px #6D4F3E;
+}
+
+.playRadio {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.playQuestion {
+  font-family: 'Avenir_Bold';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6D4F3E;
+  margin-bottom: 30px;
+}
+
+.playCountQuestion {
+  font-family: 'Avenir_DemiBold';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #BEA08F;
+  position: absolute;
+  bottom: 60px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.playText {
+  padding: 40px 40px 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 328px;
+}
+
+.playLabel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width:
+}
+
+.playLabelText {
+  font-family: 'Avenir_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.playRadioItem {
+  margin-top: 16px;
+  width: fit-content;
+}
+
+.playTextEnd {
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 222px;
+}
+
+.playResult {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #BEA08F;
+  margin-bottom: 16px;
+}
+
+.playResultText {
+  font-family: 'Avenir_Bold';
+  font-size: 32px;
+  font-style: normal;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6D4F3E;
+}
+
+.playTextEndOuther {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.playImg {
+  max-width: 572px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.playPics {
+  padding: 60px 20px 0;
+}
+
+.playButtons {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playAnswer {
+  font-family: 'Avenir_Medium';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 12px 20px;
+  color: #6D4F3E;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.playAnswerMiddle {
+  margin: 0 16px;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .textBlock {
+    max-width: 538px;
+  }
+
+  .playBlockOuther {
+    max-width: none;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .playImg {
+    margin-top: -20px;
+  }
+
+  .textBlock {
+    max-width: 100%;
+    margin: 24px auto 16px;
+  }
+
+  .playBlockOuther {
+    padding: 0 10px;
+  }
+
+  .playBlock {
+    height: 460px;
+  }
+
+  .playStart {
+    width: 82.8%;
+  }
+
+  .playPics {
+    padding: 40px 0 0;
+  }
+
+  .playButton {
+    bottom: 40px;
+  }
+
+  .playRound {
+    padding: 120px 16px 0;
+  }
+
+  .playRoundCount {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .playRoundName {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .playRoundDescription {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .playText {
+    padding: 40px 16px 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 355px;
+  }
+
+  .playCountQuestion {
+    bottom: 40px;
+  }
+
+  .playResult {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .playResultText {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .playTextEnd {
+    padding: 0 16px;
+  }
+
+  .playTextEnd {
+    max-height: 420px;
+  }
+
+  .playAnswerMiddle {
+    margin: 0 auto;
+  }
+
+  .playButtons {
+    flex-wrap: wrap;
+  }
+
+  .playPics {
+    padding: 40px 16px 0;
+  }
+
+  .playImg {
+    max-width: none;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .playButtons {
+    margin: 8px auto 0;
+  }
+
+  .playCountQuestion {
+    font-size: 18px;
+  }
+
+  .playAnswer {
+    margin-top: 8px;
+  }
+
+  .playAnswer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-device-width: 620px) {
+  .playImg {
+    margin: 0 auto;
+  }
+}

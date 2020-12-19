@@ -64,12 +64,21 @@
     left: 146px;
     top: 260px;
   }
+
+  .textBlock, .attention {
+    max-width: 538px;
+  }
+
 }
 
 @media only screen and (max-device-width: 668px) {
   .mafiaSchedule {
     max-width: 380px;
     width: 100%;
+  }
+
+  .textBlock, .attention {
+    max-width: 100%;
   }
 
   .mafiaHrHideMobile {

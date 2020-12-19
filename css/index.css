@@ -60,7 +60,7 @@ body {
 body {
   min-height: 100vh;
   width: auto;
-  background: #EDE9E6 url(./../images/background.png) no-repeat center top / cover;
+  background: #EDE9E6 url(./../images/background.png) no-repeat center top / 112%;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -218,6 +218,30 @@ body {
   color: #000000;
 }
 
+.textLink {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #BEA08F;
+  text-decoration: underline;
+  vertical-align: top;
+}
+
+.textLink img {
+  width: 22px;
+  height: 22px;
+  margin-left: 4px;
+  vertical-align: inherit;
+  transition: 0.3s;
+}
+
+.textLink:hover img {
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.75);
+}
+
 .shadowMobile {
   display: none;
 }
@@ -301,6 +325,18 @@ body {
   font-size: 12px;
 }
 
+.videoBlock {
+  max-width: 540px;
+  height: auto;
+  margin: 60px auto 30px;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-device-width: 1440px) {}
 
 @media only screen and (max-device-width: 1290px) {}
@@ -314,6 +350,10 @@ body {
 
   body {
     background-size: 250%;
+  }
+
+  .videoBlock {
+    max-width: 436px;
   }
 }
 
@@ -377,5 +417,19 @@ body {
 
   body {
     background-size: 600%;
+  }
+
+  .textLink img {
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+  }
+
+  .videoBlock {
+    margin: 41px auto;
+  }
+
+  .videoBlockOuther {
+    padding: 0 10px;
   }
 }

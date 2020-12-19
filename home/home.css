@@ -6,6 +6,10 @@
   position: relative;
 }
 
+.dataRight {
+  width: calc(29.999% + 20px);
+}
+
 .video {
   width: 100%;
   height: auto;
@@ -103,28 +107,6 @@
   vertical-align: top;
 }
 
-#chat {
-  width: 408px;
-  height: 540px;
-  background: #FFFFFF;
-  margin-top: 160px;
-  margin-right: 20px;
-  position: relative;
-}
-
-.chatCaption {
-  width: 100%;
-  font-family: 'Avenir_Bold';
-  font-size: 20px;
-  font-style: normal;
-  line-height: 60px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #FFFFFF;
-  display: block;
-  margin: 0 auto;
-}
-
 .menuIcon, .menuBlock {
   display: none;
 }
@@ -182,23 +164,19 @@
   .dataVideo, .dataTimetable, .timetable {
     max-width: 500px;
   }
-
-  #chat {
-    width: 300px;
-  }
 }
 
 @media only screen and (max-device-width: 970px) {
   .dataVideo, .dataTimetable, .timetable {
     max-width: 400px;
   }
-
-  #chat {
-    width: 260px;
-  }
 }
 
 @media only screen and (max-device-width: 868px) {
+  .dataRight {
+    width: auto;
+  }
+
   .menu {
     padding: 0 20px;
   }
@@ -215,12 +193,6 @@
 
   .dataHome {
     flex-direction: column;
-  }
-
-  #chat {
-    width: 100%;
-    margin: 50px auto;
-    height: 397px;
   }
 
   .menuIcon {
@@ -260,15 +232,5 @@
 
   .dataVideo {
     margin: 22px auto 0;
-  }
-
-  #chat {
-    margin: 30px auto 48px;
-    height: 360px;
-  }
-
-  .chatCaption {
-    font-size: 18px;
-    line-height: 48px;
   }
 }

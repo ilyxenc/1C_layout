@@ -1,0 +1,39 @@
+.flud {
+  width: 434px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 271px;
+  top: 260px;
+  z-index: -1;
+}
+
+.fludHrBottom {
+  height: 46px;
+}
+
+@media only screen and (max-device-width: 868px) {
+  .flud {
+    width: 290px;
+    left: 146px;
+    top: 260px;
+  }
+
+  .textBlock {
+    max-width: 538px;
+  }
+}
+
+@media only screen and (max-device-width: 668px) {
+  .flud {
+    width: 280px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+  }
+
+  .textBlock {
+    max-width: 100%;
+  }
+}
