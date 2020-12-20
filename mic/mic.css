@@ -69,9 +69,39 @@
   margin: 0;
 }
 
+.micItemLow {
+  min-height: 460px;
+}
+
+@media only screen and (max-width: 1340px) {
+  .micItemLow {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .micItemLow {
+    min-height: 540px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .micItem {
     width: 25%;
+  }
+
+  .micItemLow {
+    min-height: 563px;
+  }
+
+  .micItemLow1200 {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .micItemLow1200 {
+    min-height: 530px;
   }
 }
 

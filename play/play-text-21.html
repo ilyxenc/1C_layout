@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сыграем?</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="ru">
+  <meta name="generator" content="N/A">
+  <meta name="language" content="Russian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link type="text/css" rel="stylesheet" href="./../css/fonts.css">
+  <link type="text/css" rel="stylesheet" href="./../css/index.css">
+  <link type="text/css" rel="stylesheet" href="./play.css">
+  <link type="text/css" rel="stylesheet" href="./../css/borders.css">
+
+</head>
+
+<body>
+  <div class="menu">
+    <img class="logo" src="./../images/logo.png" alt="" />
+  </div>
+  <div class="shadowMobile">
+
+  </div>
+  <div class="data">
+    <a class="backBlock" href="./../home/home.html">
+      <div class="back gradient">
+        <img src="./../images/icons/back.png" alt="" />
+      </div>
+      <p>
+        На главную
+      </p>
+    </a>
+    <div class="textBlock">
+      <p class="textCaption">
+        Сыграем?
+      </p>
+      <span class="textHr"></span>
+      <p class="text">
+        Примите участие в нашей викторине! Ответьте на вопросы, включите логику и покажите эрудицию!
+      </p>
+      <span class="textHr"></span>
+      <p class="text">
+        Удачи!
+      </p>
+    </div>
+    <div class="playBlockOuther" data-name="text" style="display: block;">
+      <div class="playBlock">
+        <div class="playData">
+          <div class="playText">
+            <p class="playQuestion">
+              Как называлась деревянная дощечка, которую носили с собой в древности на Руси малограмотные люди?
+            </p>
+            <form class="playAnswers">
+              <div class="playAnswerItem">
+                <div class="playRadioItem">
+                  <label for="radio1" class="playLabel">
+                    <div class="playLabelRadio"></div>
+                    <p class="playLabelText">
+                      Рея
+                    </p>
+                  </label>
+                  <input class="playRadio" id="radio1" type="radio" name="radios" value="1">
+                </div>
+                <div class="playRadioItem">
+                  <label for="radio2" class="playLabel">
+                    <div class="playLabelRadio"></div>
+                    <p class="playLabelText">
+                      Корма
+                    </p>
+                  </label>
+                  <input class="playRadio" id="radio2" type="radio" name="radios" value="2">
+                </div>
+                <div class="playRadioItem playTextTrue">
+                  <label for="radio3" class="playLabel">
+                    <div class="playLabelRadio"></div>
+                    <p class="playLabelText">
+                      Нос
+                    </p>
+                  </label>
+                  <input class="playRadio" id="radio3" type="radio" name="radios" value="3">
+                </div>
+                <div class="playRadioItem playTextFalse">
+                  <label for="radio4" class="playLabel">
+                    <div class="playLabelRadio"></div>
+                    <p class="playLabelText">
+                      Палуба
+                    </p>
+                  </label>
+                  <input class="playRadio" id="radio4" type="radio" name="radios" value="4">
+                </div>
+              </div>
+            </form>
+            <script type="text/javascript">
+              function updateValues() {
+                var radios = document.querySelectorAll('[name="radios"]');
+                for (var i = 0; i < radios.length; i++) {
+                  var id = radios[i].getAttribute('id');
+                  radios[i].value = document.querySelector('label[for="' + id + '"]').textContent.trim()
+                }
+              }
+
+              function registerEvents() {
+                var radios = document.querySelectorAll('[name="radios"]');
+                for (var i = 0; i < radios.length; i++) {
+                  radios[i].addEventListener("change", handleChange)
+                }
+              }
+
+              function handleChange() {
+                var radios = document.querySelectorAll('[name="radios"]');
+                for (var i = 0; i < radios.length; i++) {
+                  document.querySelector('label[for="' + radios[i].id + '"]').querySelector('.playLabelRadio').classList = 'playLabelRadio';
+                }
+                document.querySelector('label[for="' + this.id + '"]').querySelector('.playLabelRadio').classList = 'playLabelRadio playLabelRadioAnswered';
+              }
+
+              registerEvents();
+            </script>
+          </div>
+
+          <p class="playCountQuestion">
+            29 из 30
+          </p>
+        </div>
+
+        <div class="borders">
+          <div class="borderLeftTop">
+            <div class="borderLeftTop1 borderLeftTopType2 borderGradient"></div>
+            <div class="borderLeftTop2 borderLeftTopType2 borderGradient"></div>
+          </div>
+          <div class="borderRightTop">
+            <div class="borderRightTop1 borderRightTopType2 borderGradient"></div>
+            <div class="borderRightTop2 borderRightTopType2 borderGradient"></div>
+          </div>
+          <div class="borderLeftBottom">
+            <div class="borderLeftBottom1 borderLeftBottomType2 borderGradient"></div>
+            <div class="borderLeftBottom2 borderLeftBottomType2 borderGradient"></div>
+          </div>
+          <div class="borderRightBottom">
+            <div class="borderRightBottom1 borderRightBottomType2 borderGradient"></div>
+            <div class="borderRightBottom2 borderRightBottomType2 borderGradient"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

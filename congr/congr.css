@@ -45,7 +45,7 @@
 }
 
 .congrButton:hover {
-  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 0 100px rgb(255, 255, 255, 0.35);
 }
 
 .congrText {

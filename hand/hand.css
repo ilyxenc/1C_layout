@@ -58,7 +58,7 @@
   letter-spacing: 0em;
   text-align: left;
   margin-top: 20px;
-  min-height: 384px;
+  /* min-height: 384px; */
 }
 
 .handText span {
@@ -71,21 +71,21 @@
   }
 
   .handText {
-    min-height: 528px;
+    /* min-height: 528px; */
   }
 
   .handCaption {
-    min-height: 81px;
+    /* min-height: 81px; */
   }
 }
 
 @media only screen and (max-width: 1050px) {
   .handText {
-    min-height: 576px;
+    /* min-height: 576px; */
   }
 
   .handCaption {
-    min-height: 108px;
+    /* min-height: 108px; */
   }
 }
 
@@ -110,11 +110,11 @@
   }
 
   .handCaption {
-    min-height: 81px;
+    /* min-height: 81px; */
   }
 
   .handText {
-    min-height: 506px;
+    /* min-height: 506px; */
   }
 }
 

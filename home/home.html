@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Домашняя</title>
+  <title>Главная</title>
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -12,12 +12,35 @@
   <meta name="language" content="Russian">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+  <link rel="apple-touch-icon" sizes="57x57" href="./../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link type="text/css" rel="stylesheet" href="./../css/fonts.css">
   <link type="text/css" rel="stylesheet" href="./../css/index.css">
   <link type="text/css" rel="stylesheet" href="./home.css">
   <link type="text/css" rel="stylesheet" href="./chat.css">
+  <link type="text/css" rel="stylesheet" href="./timetable.css">
   <link type="text/css" rel="stylesheet" href="./../css/borders.css">
-
+  <script type="text/javascript">
+    window.onbeforeunload = function() {
+      window.scrollTo(0, 0);
+    }
+  </script>
 </head>
 
 <body>
@@ -28,38 +51,6 @@
     </div>
   </div>
   <div id="menuBlock" class="menuBlock" data-visibility="0">
-    <a class="timetableItem" href="./../congr/congr.html">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-11.png" alt="" />
-      </div>
-      <p>
-        Новогодние поздравления
-      </p>
-    </a>
-    <a class="timetableItem" href="./../quiz/quiz.html">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-8.png" alt="" />
-      </div>
-      <p>
-        Quiz
-      </p>
-    </a>
-    <a class="timetableItem" href="./../chef/chef.html">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-5.png" alt="" />
-      </div>
-      <p>
-        Новогодний<br />стол от шефа
-      </p>
-    </a>
-    <a class="timetableItem" href="#">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-2.png" alt="" />
-      </div>
-      <p>
-        Скажи чиззз!
-      </p>
-    </a>
     <a class="timetableItem" href="./../memory/memory.html">
       <div class="icon gradient">
         <img src="./../images/icons/icon-10.png" alt="" />
@@ -68,28 +59,12 @@
         Новогодние воспоминания
       </p>
     </a>
-    <a class="timetableItem" href="./../mafia/mafia.html">
+    <a class="timetableItem" href="./../congr/congr.html">
       <div class="icon gradient">
-        <img src="./../images/icons/icon-7.png" alt="" />
+        <img src="./../images/icons/icon-11.png" alt="" />
       </div>
       <p>
-        Просыпается мафия
-      </p>
-    </a>
-    <a class="timetableItem" href="./../hand/hand.html">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-4.png" alt="" />
-      </div>
-      <p>
-        Своими руками
-      </p>
-    </a>
-    <a class="timetableItem" href="./../flud/flud.html">
-      <div class="icon gradient">
-        <img src="./../images/icons/icon-1.png" alt="" />
-      </div>
-      <p>
-        Новогодняя флудилка
+        Новогодние поздравления
       </p>
     </a>
     <a class="timetableItem" href="https://fotogallery.1c2021.ru/">
@@ -100,6 +75,22 @@
         Новогодний фотоальбом
       </p>
     </a>
+    <a class="timetableItem" href="./../quiz/quiz.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-8.png" alt="" />
+      </div>
+      <p>
+        Quiz
+      </p>
+    </a>
+    <a class="timetableItem" href="./../mafia/mafia.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-7.png" alt="" />
+      </div>
+      <p>
+        Просыпается мафия
+      </p>
+    </a>
     <a class="timetableItem" href="./../cs/cs.html">
       <div class="icon gradient">
         <img src="./../images/icons/icon-6.png" alt="" />
@@ -108,12 +99,44 @@
         Counter-Strike: Source
       </p>
     </a>
+    <a class="timetableItem" href="./../chef/chef.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-5.png" alt="" />
+      </div>
+      <p>
+        Новогодний<br />стол от шефа
+      </p>
+    </a>
+    <a class="timetableItem" href="./../hand/hand.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-4.png" alt="" />
+      </div>
+      <p>
+        Своими руками
+      </p>
+    </a>
     <a class="timetableItem" href="./../quiz/quiz.html">
       <div class="icon gradient">
         <img src="./../images/icons/icon-3.png" alt="" />
       </div>
       <p>
         OPEN MIC
+      </p>
+    </a>
+    <a class="timetableItem" href="#">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-2.png" alt="" />
+      </div>
+      <p>
+        Скажи чиззз!
+      </p>
+    </a>
+    <a class="timetableItem" href="./../flud/flud.html">
+      <div class="icon gradient">
+        <img src="./../images/icons/icon-1.png" alt="" />
+      </div>
+      <p>
+        Новогодняя флудилка
       </p>
     </a>
     <a class="timetableItem" href="./../play/play.html">
@@ -125,6 +148,7 @@
       </p>
     </a>
   </div>
+
   <script type="text/javascript">
     let menu = document.querySelector("#menu");
     let menuBlock = document.querySelector("#menuBlock");
@@ -170,9 +194,105 @@
       </div>
       <div class="dataTimetable">
         <img class="timetableStyle" src="./../images/timetable-style.png" alt="" />
-        <p class="button gradient">
+        <p class="button gradient" id="program">
           Программа
         </p>
+
+        <div id="programBlock" data-visibility="0" class="popUpBlock popUpInvisible">
+          <div class="registration popUp">
+            <div class="popUpInside">
+              <p class="caption gradient">
+                ПРОГРАММА
+                <img id="cancel" src="./../images/cancel.png" alt="" />
+              </p>
+              <form class="timetablePopUp">
+                <div class="timetableItemPopUp">
+                  <p class="timePopUp">
+                    18:30
+                  </p>
+                  <div class="hrPopUp"></div>
+                  <p class="namePopUp">
+                    Начало основной трансляции
+                  </p>
+                </div>
+                <div class="timetableItemPopUp">
+                  <p class="timePopUp">
+                    19:00
+                  </p>
+                  <div class="hrPopUp"></div>
+                  <p class="namePopUp">
+                    Начало работы активностей
+                  </p>
+                </div>
+                <div class="timetableItemPopUp">
+                  <p class="timePopUp">
+                    22:00
+                  </p>
+                  <div class="hrPopUp"></div>
+                  <p class="namePopUp">
+                    DJ set
+                  </p>
+                </div>
+                <div class="timetableItemPopUp">
+                  <p class="timePopUp">
+                    23:00
+                  </p>
+                  <div class="hrPopUp"></div>
+                  <p class="namePopUp">
+                    Окончание трансляции
+                  </p>
+                </div>
+                <div class="timetableItemPopUp">
+                  <p class="timePopUp">
+                    00:00
+                  </p>
+                  <div class="hrPopUp"></div>
+                  <p class="namePopUp">
+                    Окончание работы активностей
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="borders">
+              <div class="borderLeftTop">
+                <div class="borderLeftTop1 borderLeftTopType2 borderGradient"></div>
+                <div class="borderLeftTop2 borderLeftTopType2 borderGradient"></div>
+              </div>
+              <div class="borderRightTop">
+                <div class="borderRightTop1 borderRightTopType2 borderGradient"></div>
+                <div class="borderRightTop2 borderRightTopType2 borderGradient"></div>
+              </div>
+              <div class="borderLeftBottom">
+                <div class="borderLeftBottom1 borderLeftBottomType2 borderGradient"></div>
+                <div class="borderLeftBottom2 borderLeftBottomType2 borderGradient"></div>
+              </div>
+              <div class="borderRightBottom">
+                <div class="borderRightBottom1 borderRightBottomType2 borderGradient"></div>
+                <div class="borderRightBottom2 borderRightBottomType2 borderGradient"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          let program = document.querySelector("#program");
+          let programBlock = document.querySelector("#programBlock");
+          let cancel = document.querySelector("#cancel");
+
+          program.addEventListener('click', () => {
+            if (programBlock.dataset.visibility == 0) {
+              programBlock.classList = 'popUpBlock';
+              programBlock.dataset.visibility = 1;
+            }
+          });
+
+          cancel.addEventListener('click', () => {
+            if (programBlock.dataset.visibility == 1) {
+              programBlock.classList = 'popUpBlock popUpInvisible';
+              programBlock.dataset.visibility = 0;
+            }
+          });
+        </script>
       </div>
       <div class="timetable">
         <a class="timetableItem" href="./../congr/congr.html">
@@ -239,7 +359,7 @@
             Новогодняя флудилка
           </p>
         </a>
-        <a class="timetableItem" href="https://fotogallery.1c2021.ru/">
+        <a class="timetableItem" href="https://fotogallery.1c2021.ru/" target="_blank">
           <div class="icon gradient">
             <img src="./../images/icons/icon-9.png" alt="" />
           </div>
@@ -247,7 +367,7 @@
             Новогодний фотоальбом
           </p>
         </a>
-        <a class="timetableItem" href="./../cs/cs.html">
+        <a class="timetableItem" href="./../cs/cs.html" target="_blank">
           <div class="icon gradient">
             <img src="./../images/icons/icon-6.png" alt="" />
           </div>
