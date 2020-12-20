@@ -6,9 +6,17 @@
   color: #000000 !important;
 }
 
+.video {
+  height: calc(100vw * 0.375 * 0.5625);
+}
+
 @media only screen and (max-width: 868px) {
   .textBlock {
     max-width: 538px;
+  }
+
+  .video {
+    height: calc(100vw * 0.5677 * 0.5625);
   }
 }
 
@@ -16,5 +24,9 @@
   .textBlock {
     max-width: 100%;
     margin: 24px auto 16px;
+  }
+
+  .video {
+    height: calc(100vw * 0.875 * 0.5625);
   }
 }

@@ -12,7 +12,8 @@
 
 .video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  height: calc(100vw * 0.51388 * 0.5625);
 }
 
 .dataTimetable {
@@ -268,9 +269,17 @@
   .menuProgram {
     display: block;
   }
+
+  .video {
+    height: calc(100vw * 0.9047 * 0.5625);
+  }
 }
 
 @media only screen and (max-width: 668px) {
+  .video {
+    height: calc(100vw * 0.875 * 0.5625);
+  }
+
   .menuBottomActivated {
     height: calc(100% - 63px);
     top: 63px;

@@ -9,7 +9,7 @@
 
 .congr {
   background: #FFFFFF;
-  max-width: 31.5%;
+  width: 31.5%;
   margin-bottom: 30px;
 }
 
@@ -67,6 +67,10 @@
   color: #BEA08F;
 }
 
+.video {
+  height: calc(100vw * 0.2975 * 0.5625);
+}
+
 @media only screen and (max-width: 1000px) {
   .congrButton {
     padding: 8px 15px;
@@ -77,13 +81,16 @@
 
 @media only screen and (max-width: 868px) {
   .congr {
-    max-width: 48.5%;
+    width: 48.5%;
+  }
+  .video {
+    height: calc(100vw * 0.5221 * 0.5625);
   }
 }
 
 @media only screen and (max-width: 668px) {
   .congr {
-    max-width: 100%;
+    width: 100%;
   }
 
   .congrButton {
@@ -101,5 +108,8 @@
 
   .congrsBlock {
     margin: 0 auto 24px;
+  }
+  .video {
+    height: calc(100vw * 0.9375 * 0.5625);
   }
 }
