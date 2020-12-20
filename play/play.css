@@ -40,6 +40,11 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+  transition: 0.3s;
+}
+
+.playButton:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
 }
 
 .playRound {
@@ -86,6 +91,16 @@
   width: 20px;
   height: 20px;
   display: block;
+}
+
+.playFalse {
+  box-shadow: inset 0 0 0 100px #E01E1E;
+  color: #FFFFFF !important;
+}
+
+.playTrue {
+  box-shadow: inset 0 0 0 100px #0BBD0B;
+  color: #FFFFFF !important;
 }
 
 .playLabelRadioAnswered {
@@ -219,6 +234,7 @@
   padding: 12px 20px;
   color: #6D4F3E;
   background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 
 .playAnswerMiddle {

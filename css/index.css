@@ -110,6 +110,7 @@ body {
   padding: 12px 20px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .backBlock {
@@ -330,6 +331,7 @@ body {
   height: auto;
   margin: 60px auto 30px;
   position: relative;
+  cursor: pointer;
 }
 
 .video {
