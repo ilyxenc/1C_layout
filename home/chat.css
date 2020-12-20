@@ -75,6 +75,7 @@
   text-align: left;
   color: #000000;
   margin-top: 4px;
+  vertical-align: top;
 }
 
 .inputBlock {
@@ -86,6 +87,13 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.emojiMessage{
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #emojis {
