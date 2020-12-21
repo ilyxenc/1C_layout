@@ -75,7 +75,7 @@
   }
 
   .handCaption {
-    /* min-height: 81px; */
+    min-height: 81px;
   }
 }
 
@@ -85,7 +85,7 @@
   }
 
   .handCaption {
-    /* min-height: 108px; */
+    min-height: 108px;
   }
 }
 
