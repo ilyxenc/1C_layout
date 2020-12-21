@@ -1,493 +1,555 @@
 @font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url('./font/AvenirNextCyr-Demi.eot');
-  src: url('./font/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
-    url('./font/AvenirNextCyr-Demi.woff2') format('woff2'),
-    url('./font/AvenirNextCyr-Demi.woff') format('woff'),
-    url('./font/AvenirNextCyr-Demi.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Avenir Next Cyr';
+    src: url('./font/AvenirNextCyr-Demi.eot');
+    src: url('./font/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+        url('./font/AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('./font/AvenirNextCyr-Demi.woff') format('woff'),
+        url('./font/AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Avenir Next Cyr';
-  src: url('./font/AvenirNextCyr-Regular.eot');
-  src: url('./font/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
-    url('./font/AvenirNextCyr-Regular.woff2') format('woff2'),
-    url('./font/AvenirNextCyr-Regular.woff') format('woff'),
-    url('./font/AvenirNextCyr-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Avenir Next Cyr';
+    src: url('./font/AvenirNextCyr-Regular.eot');
+    src: url('./font/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('./font/AvenirNextCyr-Regular.woff') format('woff'),
+        url('./font/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 BODY {
-  font-family: "Avenir Next Cyr";
-  background-color: #ede9e6;
-  background-image: url(".//images/bg.jpg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  min-width: 660px;
-  padding: 0px;
-  margin: 0px;
-  padding-bottom: 20px;
+	font-family: "Avenir Next Cyr";
+	background-color: #ede9e6;
+	background-image: url("./images/bg.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+	min-width: 660px;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 20px;
 }
 
 A {
-  color: #fff;
-  text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 .logo {
-  padding: 20px;
+	padding: 20px;
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 }
 
-.info>div {
-  margin: 10px 0px;
+.info > div {
+	margin: 10px 0px;
 }
 
-.info>div:first-child {
-  font-weight: bold;
-  line-height: 30px;
-  padding-left: 36px;
-  background-image: url(".//images/back.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 28px;
+.info > div:first-child {
+	font-weight: bold;
+	line-height: 30px;
+	padding-left: 36px;
+	background-image: url("./images/back.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 28px;
 }
 
-.info>div:nth-child(2) {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 20px 0px;
+.info > div:nth-child(2) {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 20px 0px;
 }
 
-.info>div:nth-child(5) {
-  display: flex;
+.info > div:nth-child(5) {
+	display: flex;
 }
 
-.info>div:nth-child(5)>div>div {
-  position: relative;
-  max-width: 320px;
-  margin-bottom: 20px;
-  padding-top: 10px;
-  padding-left: 36px;
+.info > div:nth-child(5) > div > div {
+	position: relative;
+	max-width: 320px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-left: 36px;
 }
 
-.info>div:nth-child(5)>div>div:before {
-  content: "1";
-  display: block;
-  position: absolute;
-  left: 0px;
-  top: 8px;
-  line-height: 22px;
-  text-align: center;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  background-color: #bb9675;
-  color: #fff;
-  font-weight: bold;
+.info > div:nth-child(5) > div > div:before {
+	content: "1";
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	background-color: #bb9675;
+	color: #fff;
+	font-weight: bold;
 }
 
-.info>div:nth-child(5)>div>div:nth-child(2):before {
-  content: "2";
+.info > div:nth-child(5) > div > div:nth-child(2):before {
+	content: "2";
 }
 
-.info>div:nth-child(5)>div:nth-child(2)>div:nth-child(1):before {
-  content: "3";
+.info > div:nth-child(5) > div:nth-child(2) > div:nth-child(1):before {
+	content: "3";
 }
 
-.info>div:nth-child(5)>div:nth-child(2)>div:nth-child(2):before {
-  content: "4";
+.info > div:nth-child(5) > div:nth-child(2) > div:nth-child(2):before {
+	content: "4";
 }
 
-.wrapper>div>div {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
+.wrapper > div > div {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
 }
 
-.wrapper>div>div:nth-child(4) {
-  padding-right: 80px;
+.wrapper > div > div:nth-child(4) {
+	padding-right: 80px;
 }
 
 .image-editor {
-  height: 480px;
-  margin: 0 auto;
-  margin-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
+	height: 480px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
 
 .image-editor .video {
-  position: absolute;
-  display: none;
-  left: 80px;
-  top: 0px;
-  width: 640px;
-  height: 480px;
+	position: absolute;
+	display: none;
+	left: 80px;
+	top: 0px;
+	width: 640px;
+	height: 480px;
 }
 
 .image-editor .uimage {
-  position: absolute;
-  display: none;
-  left: 80px;
-  top: 0px;
-  width: 640px;
-  height: 480px;
+	position: absolute;
+	display: none;
+	left: 80px;
+	top: 0px;
+	width: 640px;
+	height: 480px;
 }
 
 .image-editor .video .video-controls {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 640px;
-  height: 480px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 640px;
+	height: 480px;
 }
 
 .image-editor .video .video-controls .video-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 32px;
-  height: 32px;
-  background-image: url("./images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 32px 32px;
-  cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 32px;
+	height: 32px;
+	background-image: url("images/close.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 32px 32px;
+	cursor: pointer;
 }
 
 .image-editor .video .video-controls .video-take-photo {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -24px;
-  width: 48px;
-  height: 48px;
-  background-image: url("./images/photo.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 48px 48px;
-  cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -24px;
+	width: 48px;
+	height: 48px;
+	background-image: url("images/photo.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 48px 48px;
+	cursor: pointer;
 }
 
 .image-editor .image {
-  position: relative;
-  width: 640px;
-  height: 480px;
-  border: 2px solid #75573f;
-  box-sizing: border-box;
+	position: relative;
+	width: 640px;
+	height: 480px;
+	border: 2px solid #75573f;
+	box-sizing: border-box;
 }
 
 .save {
-  cursor: pointer;
-  width: 70px;
-  height: 70px;
-  background-image: url("./images/save.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 48px 48px;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	background-image: url("images/save.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 48px 48px;
+
 }
 
 .image-editor .image img {
-  max-width: 100%;
-  max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .image-editor-left {
-  width: 80px;
+	width: 80px;
 }
 
 .image-editor-left .camera,
 .image-editor-left .upload {
-  cursor: pointer;
-  text-align: center;
-  padding: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin: 10px 0px;
+	cursor: pointer;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 10px 0px;
 }
 
 .image-editor-left .camera {
-  width: 60px;
-  height: 60px;
-  background-image: url("./images/camera.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 48px 48px;
+	width: 60px;
+	height: 60px;
+	background-image: url("images/camera.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 48px 48px;
 }
 
 .image-editor-left .upload {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  background-image: url("./images/upload.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 48px 48px;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	background-image: url("images/upload.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 48px 48px;
 }
 
 .image-editor-left .upload input {
-  cursor: pointer;
-  width: 80px;
-  height: 80px;
-  opacity: 0;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	opacity: 0;
 }
 
 .image-editor-right {
-  width: 160px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-top: 2px solid #75573f;
-  border-right: 2px solid #75573f;
-  border-bottom: 2px solid #75573f;
+	width: 160px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-top: 2px solid #75573f;
+	border-right: 2px solid #75573f;
+	border-bottom: 2px solid #75573f;
 }
 
 .de {
-  width: 64px;
-  height: 64px;
-  z-index: 2;
-  cursor: pointer;
-  transition: all 0.1s;
+	width: 64px;
+	height: 64px;
+	z-index: 2;
+	cursor: pointer;
+	transition: all 0.1s;
 }
 
 .de:hover img {
-  transition: all 0.1s;
+	transition: all 0.1s;
 }
 
 .de img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .des {
-  position: absolute;
-  width: 64px;
-  height: 64px;
+	position: absolute;
+	width: 64px;
+	height: 64px;
 }
 
 .des .close {
-  width: 16px;
-  height: 16px;
-  left: -12px;
-  top: -12px;
-  position: absolute;
-  cursor: pointer;
-  color: #fff;
-  font-family: Arial;
-  font-size: 1.2em;
+	width: 16px;
+	height: 16px;
+	left: -12px;
+	top: -12px;
+	position: absolute;
+	cursor: pointer;
+	color: #fff;
+	font-family: Arial;
+	font-size: 1.2em;
 }
 
 .des img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
-.image>div {
-  position: absolute;
+.image > div {
+	position: absolute;
 }
 
 .filters {
-  margin: 5px 10px 0px 0px;
+	margin: 5px 10px 0px 0px;
 }
 
 .filters li {
-  list-style: none;
-  padding: 5px 0px;
-  margin: 0px;
-  text-align: center;
+	list-style: none;
+	padding: 5px 0px;
+	margin: 0px;
+	text-align: center;
 }
 
 .filters li a {
-  color: #ff0098;
-  cursor: pointer;
+	color: #ff0098;
+	cursor: pointer;
 }
 
 .crop-ok {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 64px;
-  height: 64px;
-  background-image: url("./images/ok.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 64px 64px;
-  cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 64px;
+	height: 64px;
+	background-image: url("images/ok.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 64px 64px;
+	cursor: pointer;
 }
 
 .crop-rotate {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 64px;
-  height: 64px;
-  background-image: url("./images/rotate.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 64px 64px;
-  cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 64px;
+	height: 64px;
+	background-image: url("images/rotate.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 64px 64px;
+	cursor: pointer;
 }
 
 #canvasForSave {
-  display: none;
+	display: none;
 }
 
 .vpanno {
-  text-align: center;
-  color: #000;
-  display: block;
+	text-align: center;
+	color: #000;
+	display: block;
 }
 
-.vpanno>a {
-  display: block;
-  width: 243px;
-  height: 62px;
-  background-image: url(".//images/frame.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 243px 62px;
-  margin: 0 auto;
-  line-height: 62px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.ui-resizable-e {
-  width: 10px !important;
+.vpanno > a {
+	display: block;
+	width: 243px;
+	height: 62px;
+	background-image: url("./images/frame.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 243px 62px;
+	margin: 0 auto;
+	line-height: 62px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .ui-resizable-e {
-  height: 10px !important;
+	width: 10px !important;
+}
+
+.ui-resizable-e {
+	height: 10px !important;
 }
 
 .ui-icon-gripsmall-diagonal-se {
-  width: 20px !important;
-  height: 20px !important;
-  background-image: url("./images/resize.svg") !important;
-  background-position: center center !important;
-  background-size: 20px 20px !important;
-  right: -14px !important;
-  bottom: -14px !important;
+	width: 20px !important;
+	height: 20px !important;
+	background-image: url("images/resize.svg") !important;
+	background-position: center center !important;
+	background-size: 20px 20px !important;
+	right: -14px !important;
+	bottom: -14px !important;
 }
 
 .to-bottom {
-  font-weight: bold;
-  cursor: pointer;
-  color: #b29e93;
-  text-decoration: underline;
+	font-weight: bold;
+	cursor: pointer;
+	color: #b29e93;
+	text-decoration: underline;
 }
 
 /* Панно */
+
 IMG {
-  vertical-align: top;
+	vertical-align: top;
 }
 
 .panno {
-  position: relative;
-  max-width: 821px;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  padding: 10px;
-  background: rgb(187, 150, 117);
-  background: linear-gradient(127deg, rgba(187, 150, 117, 1) 0%, rgba(122, 98, 82, 1) 19%, rgba(143, 115, 93, 1) 33%, rgba(187, 150, 117, 1) 52%, rgba(81, 65, 52, 1) 64%, rgba(160, 131, 108, 1) 78%, rgba(199, 161, 127, 1) 100%);
-  box-sizing: border-box;
+	position: relative;
+	max-width: 821px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	padding: 10px;
+	background: rgb(187,150,117);
+	background: linear-gradient(127deg, rgba(187,150,117,1) 0%, rgba(122,98,82,1) 19%, rgba(143,115,93,1) 33%, rgba(187,150,117,1) 52%, rgba(81,65,52,1) 64%, rgba(160,131,108,1) 78%, rgba(199,161,127,1) 100%);
+	box-sizing: border-box;
 }
 
-.panno>div {
-  width: 10%;
+.panno > div {
+	width: 10%;
 }
 
 .panno img {
+	width: 100%;
+}
+
+.backBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.backBlock a {
+	color: #000;
+}
+
+.backBlock p {
+  font-family: 'Avenir_DemiBold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 12px;
+}
+
+.backBlock::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #4C372B 0%, #715240 33.33%, #A57A61 64.58%, #9A7962 100%);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.backBlock:hover a {
+	color: #fff;
+}
+
+.backBlock:hover::after {
   width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+.backBlock:hover .back {
+  background: transparent !important;
+}
+
+.backBlock:hover p {
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
-  .wrapper>div>div:nth-child(4) {
-    padding-right: 0px;
-  }
 
-  BODY {
-    background-size: contain;
-  }
+	.wrapper > div > div:nth-child(4) {
+		padding-right: 0px;
+	}
 
-  .image-editor {
-    height: auto;
-    width: 640px;
-    flex-direction: column;
-  }
+	BODY {
+		background-size: contain;
+	}
 
-  .image-editor-left {
-    padding: 0px 20px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+	.image-editor {
+		height: auto;
+		width: 640px;
+		flex-direction: column;
+	}
 
-  .image-editor-left .camera {
-    display: none;
-  }
+	.image-editor-left {
+		padding: 0px 20px;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
 
-  .image-editor-left .filters {
-    display: flex;
-    justify-content: space-around;
-  }
+	.image-editor-left .camera {
+		display: none;
+	}
 
-  .image-editor-left .filters>li {
-    padding: 5px;
-  }
+	.image-editor-left .filters {
+		display: flex;
+		justify-content: space-around;
+	}
 
-  .image-editor-left>div:nth-child(3) {
-    flex-grow: 1;
-  }
+	.image-editor-left .filters > li{
+		padding: 5px;
+	}
 
-  .image-editor-left .save {
-    margin-top: 0px;
-  }
+	.image-editor-left > div:nth-child(3) {
+		flex-grow: 1;
+	}
 
-  .image-editor-right {
-    width: auto;
-    border-left: 2px solid #75573f;
-  }
+	.image-editor-left .save {
+		margin-top: 0px;
+	}
 
-  .de {
-    margin: 10px;
-  }
+	.image-editor-right {
+		width: auto;
+		border-left: 2px solid #75573f;
+	}
 
-  .panno>div {
-    display: none;
-    width: 25%;
-  }
+	.de {
+		margin: 10px;
+	}
 
-  .panno>div:nth-child(-n+40) {
-    display: block;
-  }
+	.panno > div {
+		display: none;
+		width: 25%;
+	}
 
-  .logo {
-    padding-top: 100px;
-  }
+	.panno > div:nth-child(-n+40) {
+		display: block;
+	}
 
-  .image-editor-left .upload {
-    background-image: url(".//images/camera.svg");
-  }
+	.logo {
+		padding-top: 100px;
+	}
+
+	.image-editor-left .upload {
+		background-image: url("./images/camera.svg");
+	}
+
 }

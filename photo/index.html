@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Скажи чиззз!</title>
 	<meta name="viewport" content="width=640">
@@ -14,25 +13,38 @@
 	<script type="text/javascript" src="./jquery.ui.touch-punch.min.js"></script>
 	<script type="text/javascript" src="./jquery-resizable.min.js"></script>
 	<script type="text/javascript" src="./jquery.ui.rotatable.min.js"></script>
-	<link rel='stylesheet' type='text/css' href='./tivkadre.css' />
-	<link rel='stylesheet' type='text/css' href='./cropper.min.css' />
-	<link rel='stylesheet' type='text/css' href='./jquery-ui.min.css' />
-	<link rel='stylesheet' type='text/css' href='./jquery.ui.rotatable.css' />
+	<link rel='stylesheet' type='text/css' href='./tivkadre.css'/>
+	<link rel='stylesheet' type='text/css' href='./cropper.min.css'/>
+	<link rel='stylesheet' type='text/css' href='./jquery-ui.min.css'/>
+	<link rel='stylesheet' type='text/css' href='./jquery.ui.rotatable.css'/>
 
-	<!-- <link rel='stylesheet' type='text/css' href='./../css/index.css'/> -->
+	<link rel="apple-touch-icon" sizes="57x57" href="./../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-	<link rel="icon" href="./favicon.png" type="image/png">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
-
 <body>
 	<div class="wrapper">
 		<div class="content-i">
-			<div class="logo"><img src="./images/logo.png"></div>
-
+			<div class="logo"><a href="#"><img src="./images/logo.png"></a></div>
 			<div class="info">
-				<div>На главную</div>
+				<div class="backBlock"><a href="./../home/home.html">На главную</a></div>
 				<div>Улыбочку!</div>
 				<div>Онлайн-мероприятия хороши всем, кроме того, что не остается фотографий <img src="./images/smile.png" style="margin-top: 3px;"></div>
 				<div>Исправим это недоразумение и наполним сеть яркими фотками с нашего праздника!</div>
@@ -125,40 +137,40 @@
 			</div>
 			<div>
 				<div class='image-editor'>
-					<div class='image-editor-left'>
-						<div class='camera'></div>
-						<div class='upload'><input type='file' class='upload-file'></input></div>
-						<div class='filterContainer'>
-							<div class='filters'>
+						<div class='image-editor-left'>
+							<div class='camera'></div>
+							<div class='upload'><input type='file' class='upload-file'></input></div>
+							<div class='filterContainer'>
+								<div class='filters'>
 
+								</div>
+							</div>
+							<div class="save"></div>
+						</div>
+						<div class='image' id="capture"></div>
+						<div class='uimage'></div>
+						<div class='video'>
+							<video id='camera-stream'></video>
+							<div class='video-controls'>
+								<div class='video-close'></div>
+								<div class='video-take-photo'></div>
+								<canvas id='canvas'></canvas>
 							</div>
 						</div>
-						<div class="save"></div>
-					</div>
-					<div class='image' id="capture"></div>
-					<div class='uimage'></div>
-					<div class='video'>
-						<video id='camera-stream'></video>
-						<div class='video-controls'>
-							<div class='video-close'></div>
-							<div class='video-take-photo'></div>
-							<canvas id='canvas'></canvas>
+						<div class='image-editor-right'>
+							<div class="de"><img src="images/i1.png"></div>
+							<div class="de"><img src="images/i2.png"></div>
+							<div class="de"><img src="images/i3.png"></div>
+							<div class="de"><img src="images/i4.png"></div>
+							<div class="de"><img src="images/i5.png"></div>
+							<div class="de"><img src="images/i6.png"></div>
+							<div class="de"><img src="images/i7.png"></div>
+							<div class="de"><img src="images/i8.png"></div>
+							<div class="de"><img src="images/i9.png"></div>
+							<div class="de"><img src="images/i10.png"></div>
+							<div class="de"><img src="images/i11.png"></div>
+							<div class="de"><img src="images/i12.png"></div>
 						</div>
-					</div>
-					<div class='image-editor-right'>
-						<div class="de"><img src="images/i1.png"></div>
-						<div class="de"><img src="images/i2.png"></div>
-						<div class="de"><img src="images/i3.png"></div>
-						<div class="de"><img src="images/i4.png"></div>
-						<div class="de"><img src="images/i5.png"></div>
-						<div class="de"><img src="images/i6.png"></div>
-						<div class="de"><img src="images/i7.png"></div>
-						<div class="de"><img src="images/i8.png"></div>
-						<div class="de"><img src="images/i9.png"></div>
-						<div class="de"><img src="images/i10.png"></div>
-						<div class="de"><img src="images/i11.png"></div>
-						<div class="de"><img src="images/i12.png"></div>
-					</div>
 				</div>
 			</div>
 			<div class="vpanno"><a href="#">Добавить в коллаж</a></div>
@@ -167,5 +179,4 @@
 		</div>
 	</div>
 </body>
-
 </html>
