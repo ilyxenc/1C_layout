@@ -154,6 +154,11 @@
   max-height: 328px;
 }
 
+.playTextEndButton {
+  margin-top: 60px;
+  cursor: pointer;
+}
+
 .playLabel {
   display: flex;
   justify-content: flex-start;
