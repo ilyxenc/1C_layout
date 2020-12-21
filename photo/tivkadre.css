@@ -25,7 +25,7 @@
 BODY {
   font-family: "Avenir Next Cyr";
   background-color: #ede9e6;
-  background-image: url("/images/bg.jpg");
+  background-image: url(".//images/bg.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   min-width: 660px;
@@ -57,7 +57,7 @@ A {
   font-weight: bold;
   line-height: 30px;
   padding-left: 36px;
-  background-image: url("/images/back.png");
+  background-image: url(".//images/back.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 28px;
@@ -162,7 +162,7 @@ A {
   right: 10px;
   width: 32px;
   height: 32px;
-  background-image: url("images/close.svg");
+  background-image: url("./images/close.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 32px 32px;
@@ -176,7 +176,7 @@ A {
   margin-left: -24px;
   width: 48px;
   height: 48px;
-  background-image: url("images/photo.svg");
+  background-image: url("./images/photo.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 48px 48px;
@@ -195,7 +195,7 @@ A {
   cursor: pointer;
   width: 70px;
   height: 70px;
-  background-image: url("images/save.svg");
+  background-image: url("./images/save.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 48px 48px;
@@ -223,7 +223,7 @@ A {
 .image-editor-left .camera {
   width: 60px;
   height: 60px;
-  background-image: url("images/camera.svg");
+  background-image: url("./images/camera.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 48px 48px;
@@ -233,7 +233,7 @@ A {
   cursor: pointer;
   width: 60px;
   height: 60px;
-  background-image: url("images/upload.svg");
+  background-image: url("./images/upload.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 48px 48px;
@@ -323,7 +323,7 @@ A {
   right: 0px;
   width: 64px;
   height: 64px;
-  background-image: url("images/ok.svg");
+  background-image: url("./images/ok.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 64px 64px;
@@ -336,7 +336,7 @@ A {
   left: 0px;
   width: 64px;
   height: 64px;
-  background-image: url("images/rotate.svg");
+  background-image: url("./images/rotate.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 64px 64px;
@@ -357,7 +357,7 @@ A {
   display: block;
   width: 243px;
   height: 62px;
-  background-image: url("/images/frame.png");
+  background-image: url(".//images/frame.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 243px 62px;
@@ -378,7 +378,7 @@ A {
 .ui-icon-gripsmall-diagonal-se {
   width: 20px !important;
   height: 20px !important;
-  background-image: url("images/resize.svg") !important;
+  background-image: url("./images/resize.svg") !important;
   background-position: center center !important;
   background-size: 20px 20px !important;
   right: -14px !important;
@@ -488,6 +488,6 @@ IMG {
   }
 
   .image-editor-left .upload {
-    background-image: url("/images/camera.svg");
+    background-image: url(".//images/camera.svg");
   }
 }
