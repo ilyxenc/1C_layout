@@ -43,7 +43,7 @@
   </script>
 </head>
 
-<body>
+<body id="body">
   <div class="menu">
     <img class="logo" src="./../images/logo.png" alt="" />
     <div id="menu" class="menuIcon gradient">
@@ -279,10 +279,12 @@
           let program = document.querySelector("#program");
           let programBlock = document.querySelector("#programBlock");
           let cancel = document.querySelector("#cancel");
+          let body = document.querySelector("#body");
 
           program.addEventListener('click', () => {
             if (programBlock.dataset.visibility == 0) {
               programBlock.classList = 'popUpBlock';
+              body.classList = 'bodyOverflow';
               programBlock.dataset.visibility = 1;
             }
           });
@@ -290,6 +292,7 @@
           cancel.addEventListener('click', () => {
             if (programBlock.dataset.visibility == 1) {
               programBlock.classList = 'popUpBlock popUpInvisible';
+              body.classList = '';
               programBlock.dataset.visibility = 0;
             }
           });

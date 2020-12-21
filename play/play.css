@@ -377,12 +377,12 @@
     box-sizing: border-box;
   }
 
-  .playTextSmall .playQuestion {
+  .playQuestion {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .playTextSmall .playLabelText {
+  .playLabelText {
     font-size: 14px;
     line-height: 20px;
   }

@@ -16,6 +16,10 @@
   height: calc(100vw * 0.51388 * 0.5625);
 }
 
+.bodyOverflow {
+  overflow: hidden;
+}
+
 .dataTimetable {
   max-width: 740px;
   margin-left: 20px;
