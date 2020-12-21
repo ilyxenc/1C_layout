@@ -154,6 +154,15 @@
   max-height: 328px;
 }
 
+.playText::-webkit-scrollbar {
+  display: none;
+}
+
+.playText {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .playTextEndButton {
   margin-top: 60px;
   cursor: pointer;
@@ -189,6 +198,15 @@
   overflow: hidden;
   overflow-y: scroll;
   max-height: 222px;
+}
+
+.playTextEnd::-webkit-scrollbar {
+  display: none;
+}
+
+.playTextEnd {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .playResult {
@@ -322,6 +340,15 @@
     overflow: hidden;
     overflow-y: scroll;
     max-height: 355px;
+  }
+
+  .playText::-webkit-scrollbar {
+    display: none;
+  }
+
+  .playText {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .playCountQuestion {
